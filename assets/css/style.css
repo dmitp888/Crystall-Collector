@@ -1,0 +1,43 @@
+.crystal-image {
+    height: 10px;
+    width: 10px;
+    }
+    
+
+body {
+    background: url(https://us.123rf.com/450wm/mkphotoshu/mkphotoshu1509/mkphotoshu150901492/45439511-white-concrete-background-cement-textured.jpg?ver=6)
+    
+}
+
+
+#masthead {
+background:orange;
+font-size: 40px;
+color: white;
+width:30% ;
+}
+    
+#main-container {
+    padding-top: 10px;
+    padding:10px; 
+    font-size: 20px;
+    background-color: rgba(255, 166, 0, 0.931);
+    width: 50%;
+    height: 300px;
+    color:green;
+  }
+#targetscore  {
+    background: green;
+    color: white;
+    width: 20%;
+    height: 70px;
+    font-size: 35px;
+}
+#gamescores {
+    background:lightcyan;
+    color: black ;
+    height: 70px;
+    width: 10%;
+    float: right;
+    margin-right: 700px;
+}

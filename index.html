@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>simple crystal game</title>
+    <style type="text/css">
+        .crystal-image {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+
+</head>
+
+<body>
+
+    <header id="masthead"> Crystals Collector !</header>
+
+    <br>
+
+    <div id="main-container">
+        <p>When the game begins again, the player should see a new random number. Also, all the crystals will have four
+            new hidden values. Of course, the user's score (and score counter) will reset to zero.
+            * The app should show the number of games the player wins and loses. To that end, do not refresh the page as
+            a means to restart the game.</p>
+
+    </div>
+    <br>
+    <div id="targetscore"> </div>
+    <br>
+
+    <div id="crystals"> </div>
+
+    <div id="gamescores"> </div>
+
+    <div id="totalscore">
+        <h3>Your total score is:</h3>
+    </div>
+    <script type="text/javascript">
+
+
+
+
+
+
+        // The random number shown at the start of the game should be between 19 - 120
+        var targetscore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+
+        $("#targetscore").text(targetscore);
+
+        //  Creating multiple crystals each with their own unique number value.
+        // creating array to include four options.
+        var numberOptions = [10, 5, 3, 7];
+        // Next we create a for loop to create crystals for every numberOption.
+        for (var i = 0; i < numberOptions.length; i++) {
+
+            // For each iteration, we will create an imageCrystal
+            var imageCrystal = $("<img>");
+            imageCrystal.append("<img src='assets\images"+(++i)+".png' width='79' height='79' />");
+            imageCrystal.attr("data-crystalvalue", numberOptions[i]);
+            $("#crystals").append(imageCrystal);
+
+        };
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
