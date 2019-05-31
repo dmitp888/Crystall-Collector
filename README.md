@@ -1,4 +1,5 @@
 # Crystall-Collector
+This is a fun and interactive web browser game that utilizes HTML and jQuery. The app dynamically updates  HTML pages with the jQuery library.
 
 Here's how the app works:
 
