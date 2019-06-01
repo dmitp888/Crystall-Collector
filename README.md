@@ -1,6 +1,8 @@
 # Crystals-Collector
 This is a fun and interactive web browser game that utilizes HTML and jQuery. The app dynamically updates  HTML pages with the jQuery library.
 
+![alt text](Crystals-Collector.png)
+
 Here's how the app works:
 
    * Four crystals are displayed as buttons on the page.
